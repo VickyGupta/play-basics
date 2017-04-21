@@ -1,0 +1,46 @@
+@import play.api.libs.json.Json
+@import play.api.libs.json.JsArray
+
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+
+@(message: List[Int], id: String)
+@id
+<table border="2">
+    <thead>  
+        <tr>
+                    
+                <th>
+                    <h3>
+                    Index
+                     </h3>
+                </th>
+           
+                <th>
+                    <h3>
+                    Values
+                </h3>
+                <th>
+           
+        </tr>
+    
+
+@for(m <- message.indices){
+       
+        <tr>
+            <td>
+                <h4>
+                    @(m+1)
+                </h3>
+            </td>
+            <td>
+                </h4>
+                     @{message(m)}
+                </h3>
+            </td>
+
+        </tr>
+}
+    </table>

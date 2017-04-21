@@ -1,0 +1,45 @@
+@import play.api.libs.json.JsObject
+
+
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message : play.api.libs.json.JsObject)
+
+
+<table border="2">
+    <thead>  
+        <tr>
+                    
+                <th>
+                    <h3>
+                    Index
+                     </h3>
+                </th>
+           
+                <th>
+                    <h3>
+                    Values
+                </h3>
+                <th>
+           
+        </tr>
+    
+@for(i<- {(message \\ "data")(0).as[List[Int]]}){
+
+    <tr>
+            <td>
+                <h4>
+                    1
+                </h3>
+            </td>
+            <td>
+                </h4>
+                     @i
+                </h3>
+            </td>
+
+        </tr>
+}
+</table>

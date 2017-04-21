@@ -1,0 +1,35 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET     /                           controllers.HomeController.index
+# An example controller showing how to use dependency injection
+GET     /count                      controllers.CountController.count
+# An example controller showing how to write asynchronous code
+GET     /message                    controllers.AsyncController.message
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+# An example Controller showing curreunt time
+GET    /time                        controllers.AsyncController.time
+
+
+# An example Controller getting list 
+GET    /get                        controllers.GetListController.get_List
+
+
+
+# An example Controller Updating perticular element from List
+GET    /update                        controllers.UpdateListController.update_List
+
+
+
+# An example Controller Adding perticular element from List at perticular position
+GET    /add                       controllers.AddListController.add_List
+
+
+
+# An example Controller Deleting perticular element 
+GET    /delete                      controllers.DeleteListController.delete_List
