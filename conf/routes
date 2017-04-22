@@ -33,3 +33,7 @@ GET    /add                       controllers.AddListController.add_List
 
 # An example Controller Deleting perticular element 
 GET    /delete                      controllers.DeleteListController.delete_List
+
+
+# An example for Testing the mongoDB db
+#GET    /create                      controllers.AddListController.create
